@@ -1,24 +1,109 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+h1, h2, h3, h4, h5, h6, h7 {
+	font-family: "Raleway", san-serif, sans;
+	font-weight: 300;
+	color: #3d4997;
+	text-transform: uppercase;
+}	
 
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
-}
 
 
 /* Header 
 -------------------------------------------------- */
-#main-header {
+
+
+
+	
+#top-social ul{
+	list-style: none outside;
+}
+	
+#top-social ul li{
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+/* Slider Bottom Bar */
+#bottom-bar{
+	position: relative;
+	z-index: 15;
+	background: url('../images/bottom-bar.png') repeat-x;
+	height: 81px;	
+}
+
+h1#bottom-bar-title{
+	margin: 20px 50px 0 50px;	
+	font-size: 31px;
+	color: #fff;
+	font-weight: 900;
+	float: left;
 	
 }
 
-#logo {
-	margin: 15px 0 20px 15px;
+#bottom-bar-icons {
+	margin: 10px 20px 0 0;
+	float: right;
 }
 
-/* CUSTOMIZE THE NAVBAR
+#bottom-bar-icons img{
+	margin-right: 30px;
+}
+
+
+/* Main content area */
+
+.main-content p {
+	line-height: 30px;
+}
+
+.sidebar {
+	border-left: 5px solid #d1d2d4;
+	border-right: 5px solid #d1d2d4;
+	background-color: #c3c4c6;
+	width: 33.33333333333333%;
+	float: left;
+}
+
+.inner {
+	width: 100%;
+	height: 100%;
+	border-left: 12px solid #abadb0;
+	border-right: 12px solid #abadb0;
+	padding: 0 15px 0 15px;
+}
+
+#sidebar-contact{
+  padding: 10px 5px 20px 5px;
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+}
+
+
+#sidebar-contact h2 {
+	margin: 0;
+	font-weight: 200;
+}
+
+#sidebar-services {
+	padding: 10px 5px 20px 5px;
+  width: 95%;
+  margin: auto;
+}
+
+#sidebar-services img{
+	margin-top: 15px;	
+}
+/* footer */
+
+#footer-container {
+	background-color: #333333;	
+}
+
+
+/* NAVBAR
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
@@ -26,7 +111,7 @@ body {
   position: relative;
   z-index: 15;
   background: url('../images/nav-bar.png') repeat-x;
-  height: 51px;
+  height: 43px;
 }
 
 .navbar-toggle {
@@ -49,115 +134,9 @@ line-height: 13px;
 
 
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 60px;
-
-  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-  margin-top: -51px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-}
 
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
 
 
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-  	background: url('../images/nav-bar.png') repeat-x;
-	height: 51px;
-  }
-  
-  .navbar-header {
-	display:none;
-  }
-
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}
