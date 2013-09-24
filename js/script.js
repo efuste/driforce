@@ -1,4 +1,11 @@
-var tpj=jQuery;
+
+jQuery(function($) {
+  
+  $(".tool-tips").tooltip();
+	
+	
+	
+  var tpj=jQuery;
 				tpj.noConflict();
 
 				tpj(document).ready(function() {
@@ -77,5 +84,8 @@ var tpj=jQuery;
 								})
 							});
 						// END OF THE SECTION, HIDE MY ARROWS SEPERATLY FROM THE BULLETS
+						
 
-			});
+});
+
+});

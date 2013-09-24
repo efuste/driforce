@@ -8,10 +8,13 @@ h1, h2, h3, h4, h5, h6, h7 {
 	text-transform: uppercase;
 }	
 
-.bold-blue {
-	font-weight: 900;
-	color: #283891;
-	font-size: 18px;
+
+
+/*Responsive Columns */
+
+.col-lg-8 {
+		width: 66%;
+		float: left;
 }
 
 
@@ -45,6 +48,36 @@ h1, h2, h3, h4, h5, h6, h7 {
 		float: left;
 		margin: 0 5px 0 0;
 	}
+	
+	
+/* NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+  background: url('../images/nav-bar.png') repeat-x;
+  height: 43px;
+}
+
+.navbar-toggle {
+position: relative;
+float: right;
+padding: 9px 10px;
+margin-top: 5px;
+margin-right: 15px;
+margin-bottom: 8px;
+background-color: transparent;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+
+.navbar-brand {
+float: left;
+padding: 15px 15px;
+font-size: 18px;
+line-height: 13px;
+}
 
 /* Slider Bottom Bar */
  .fullwidthbanner-container{
@@ -158,62 +191,40 @@ input:focus, textarea:focus {
 #sidebar-services img{
 	margin-top: 15px;	
 }
-/* footer */
+
+
+/* footer Styling */
 
 #footer-container {
 	background-color: #333333;	
 }
 
-
-/* NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: relative;
-  background: url('../images/nav-bar.png') repeat-x;
-  height: 43px;
-}
-
-.navbar-toggle {
-position: relative;
-float: right;
-padding: 9px 10px;
-margin-top: 5px;
-margin-right: 15px;
-margin-bottom: 8px;
-background-color: transparent;
-border: 1px solid transparent;
-border-radius: 4px;
-}
-
-.navbar-brand {
-float: left;
-padding: 15px 15px;
-font-size: 18px;
-line-height: 13px;
+#footer-container h4 {
+	color: #fff;
 }
 
 
 
 
 
-
+/*Styling classes */
+.bold-blue {
+	font-weight: 900;
+	color: #283891;
+	font-size: 18px;
+}
 
 
 /* Large desktop */
 @media (min-width: 1200px) {
-	
 
 
 }
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
-	.main-content .col-lg-8 {
-		width: 66%;
-		float: left;
-	}
+		
+
 }
  
 /* Landscape phone to portrait tablet */
@@ -272,7 +283,7 @@ line-height: 13px;
 	}
 	
 	.col-lg-8 {
-		width: 66%;
+		width: 100%;
 		float: left;
 	}
 	
