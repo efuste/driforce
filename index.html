@@ -10,10 +10,14 @@
 
     <title>DriForce Restorations</title>
 	 
+	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
    <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- css for slider -->
+    
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,6 +31,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
+    <script src="js/jquery.themepunch.revolution.min.js"></script>
     <script src="js/javascript.js"></script>
   </head>
 <!-- NAVBAR
@@ -97,48 +102,133 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="images/waterremediationslide.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Water Remediation</h1>
-              <img src="images/water-drop.png" />
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/biohazardslide.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/fireslide.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+   <div class="fullwidthbanner-container">
+					<div class="fullwidthbanner">
+						<ul>
+							<!-- THE FIRST SLIDE -->
+							<li data-transition="3dcurtain-vertical" data-slotamount="10" data-masterspeed="300" data-thumb="images/thumbs/thumb1.jpg">
+										<!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+										<img src="images/waterremediationslide.jpg" >
+
+										<!-- THE CAPTIONS IN THIS SLDIE -->
+										<div class="caption very_large_text sfb"
+											 data-x="655"
+											 data-y="40"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >Water Remediation
+										</div>
+										<div class="caption sfb"
+											 data-x="786"
+											 data-y="120"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  ><img src="images/water-symbol.png" />
+										</div>
+										
+										<div class="caption medium_text sfb"
+											 data-x="700"
+											 data-y="250"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >Lorem ipusm ext goes here and some.
+										</div>
+
+										
+							</li>
+							
+							<!-- THE SECOND SLIDE -->
+							<li data-transition="papercut" data-slotamount="15" data-masterspeed="300" data-delay="9400" data-thumb="images/thumbs/thumb2.jpg">
+										<img src="images/mold-slide.jpg" >
+
+										<div class="caption very_large_text sfb"
+											 data-x="676"
+											 data-y="40"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >Mold Remediation
+										</div>
+										<div class="caption sfb"
+											 data-x="786"
+											 data-y="120"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  ><img src="images/mold-symbol.png"/>
+										</div>
+										
+										<div class="caption medium_text sfb"
+											 data-x="710"	
+											 data-y="250"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >Lorem ipusm ext goes here and some.
+										</div>
+							</li>
+
+							<!-- THE THIRD SLIDE -->
+							
+
+							<!-- THE FOURTH SLIDE -->
+							<li data-transition="slidedown" data-slotamount="7" data-masterspeed="300" data-thumb="images/thumbs/thumb4.jpg">
+									<img src="images/fire-slide.jpg" >
+
+									<div class="caption very_large_text sfb"
+											 data-x="695"
+											 data-y="40"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >Fire Restoration
+										</div>
+										<div class="caption sfb"
+											 data-x="786"
+											 data-y="120"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  ><img src="images/fire-symbol.png"/>
+										</div>
+										
+										<div class="caption medium_text sfb"
+											data-x="700"
+											 data-y="250"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >Lorem ipusm ext goes here and some.
+										</div>
+							</li>
+							
+							<li data-transition="papercut" data-slotamount="15" data-masterspeed="300" data-delay="9400" data-thumb="images/thumbs/thumb2.jpg">
+										<img src="images/biohazardslide.jpg" >
+
+										<div class="caption very_large_text sfb"
+											 data-x="580"
+											 data-y="40"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >Bio-Hazard Remediation
+										</div>
+										<div class="caption sfb"
+											 data-x="786"
+											 data-y="120"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  ><img src="images/biohazard-symbol.png" />
+										</div>
+											 
+										<div class="caption medium_text sfb"
+											 data-x="700"
+											 data-y="250"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >Lorem ipusm ext goes here and some.
+										</div>
+							</li>
+
+							
+						</ul>
+
+						<div class="tp-bannertimer tp-bottom"></div>
+					</div>
+				</div>
 	<div id="bottom-bar">
 		<div class="container">
 			<h1 id="bottom-bar-title">24 Hour Emergency Service</h1>
@@ -178,9 +268,8 @@
         <div class="sidebar">
         	<div class="inner">
           			<div id="sidebar-contact">
-          				<h2>Heading</h2>
-          				<p>Contact Us Now for</p>
-          				<p>$5oo.oo Towards your Deductible!</p>
+          				<h4>Contact Us Now for</h4>
+          				<p class="bold-blue">$5oo.oo Towards your Deductible!</p>
           				<p>We are fully Licensed and Insured.</p>
           				<form>
           					<input type="text" value="Name" />

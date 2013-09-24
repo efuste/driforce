@@ -8,24 +8,54 @@ h1, h2, h3, h4, h5, h6, h7 {
 	text-transform: uppercase;
 }	
 
+.bold-blue {
+	font-weight: 900;
+	color: #283891;
+	font-size: 18px;
+}
 
 
 /* Header 
 -------------------------------------------------- */
+	#logo {
+		margin: 15px 0 20px 15px;
+		float: left;
+		width: 400px;
+		position: relative;
+	}
 
+	#top-social {
+		width: auto;
+		float: right;
+		margin: 1.6% -0% 3% 0;
+	}
 
-
+	#phone-number {
+		color: #283891;
+		font-size: 25px;
+		margin: 0 0 5px 33px;
+		font-weight: 900;
+	}
 	
-#top-social ul{
-	list-style: none outside;
-}
+	#top-social ul{
+		list-style: none outside;
+	}
 	
-#top-social ul li{
-	float: left;
-	margin: 0 5px 0 0;
-}
+	#top-social ul li{
+		float: left;
+		margin: 0 5px 0 0;
+	}
 
 /* Slider Bottom Bar */
+ .fullwidthbanner-container{
+		width:100% !important;
+		position:relative;
+		padding:0;
+		max-height:344px !important;
+		overflow:hidden;
+
+}
+
 #bottom-bar{
 	position: relative;
 	z-index: 15;
@@ -75,10 +105,15 @@ h1#bottom-bar-title{
 }
 
 #sidebar-contact{
-  padding: 10px 5px 20px 5px;
-  width: 95%;
-  margin: auto;
-  background-color: #fff;
+  	padding: 10px 10px 20px 10px;
+  	width: 100%;
+  	margin: auto;
+  	background-color: #fff;
+  	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  	background-clip: padding-box;
 }
 
 
@@ -87,6 +122,33 @@ h1#bottom-bar-title{
 	font-weight: 200;
 }
 
+#sidebar-contact input, textarea {   
+    padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    width: 100%; 
+    margin-bottom: 20px; 
+    background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    }  
+  
+#sidebar-contact textarea {   
+    width: 400px;  
+    max-width: 400px;  
+    height: 150px;  
+    line-height: 150%;  
+    }  
+  
+#sidebar-contact input:hover, textarea:hover,  
+input:focus, textarea:focus {   
+    border-color: #C9C9C9;   
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;  
+    }  
 #sidebar-services {
 	padding: 10px 5px 20px 5px;
   width: 95%;
@@ -109,7 +171,6 @@ h1#bottom-bar-title{
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: relative;
-  z-index: 15;
   background: url('../images/nav-bar.png') repeat-x;
   height: 43px;
 }
@@ -131,7 +192,126 @@ float: left;
 padding: 15px 15px;
 font-size: 18px;
 line-height: 13px;
+}
 
+
+/*Small Phones Portrait*/
+@media (max-width: 320px) {
+	#logo {
+		margin: 15px 0 20px 10px;
+		float: left;
+		width: 260px;
+		position: relative;
+	}
+
+
+	#logo img {
+		width: 260px;
+	}
+
+	#phone-number{
+		color: #283891;
+    	font-size: 25px;
+		margin: 0 0 5px -8px;
+		font-weight: 500;
+		
+	}
+
+	#top-social {
+		width: auto;
+		float: right;
+		margin: 1.6% 19% 3% 0;
+	}
+	
+	h1#bottom-bar-title {
+		margin: 10px 0px 0 0px;
+		font-size: 18px;
+		color: #fff;
+		font-weight: 500;
+	}
+	
+	#bottom-bar-icons {
+		margin: 0 0 0 0;
+		float: none;
+	}
+	
+	#bottom-bar-icons img {
+		margin: 0 19px;
+		width: 9%;
+	}
+	
+	
+	.sidebar {
+		width: 100%;
+	}
+	
+	.fullwidthbanner-container{
+		display:none;
+	}
+}
+
+/*Larger phones and small phones in lanscape*/
+@media (min-width: 321px) and (max-width: 480px) {
+	#logo {
+		margin: 15px 0 20px 15px;
+		float: left;
+		width: 400px;
+		position: relative;
+	}
+
+
+	#logo img {
+		width: 400px;
+	}
+
+	#phone-number{
+		color: #283891;
+    	font-size: 25px;
+		margin: 0 0 5px -8px;
+		font-weight: 500;
+		
+	}
+
+	#top-social {
+		width: auto;
+		float: right;
+		margin: 1.6% 29% 3% 0;
+	}
+
+	#logo {
+		margin: 15px 0 20px 15px;
+		float: left;
+		width: 260px;
+		position: relative;
+	}
+	
+	
+	.sidebar {
+		width: 100%;
+	}
+	
+}
+
+/*tablets and small screens */
+@media (min-width: 481px) and (max-width: 768px) {
+	#top-social {
+		width: auto;
+		float: right;
+		margin: 1.6% -0% 3% 0;
+	}
+
+	#phone-number {
+		color: #283891;
+		font-size: 25px;
+		margin: 0 0 5px 33px;
+		font-weight: 900;
+	}
+	
+	.main-content .col-lg-8 {
+		width: 66%;
+		float: left;
+	}
+}
 
 
 
