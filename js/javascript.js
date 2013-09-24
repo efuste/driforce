@@ -9,7 +9,7 @@ var tpj=jQuery;
 					var api = tpj('.fullwidthbanner').revolution(
 						{
 							delay:1000000000000,
-							startwidth:1920,
+							startwidth:1200,
 							startheight:344,
 
 							onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off

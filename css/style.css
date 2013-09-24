@@ -138,7 +138,7 @@ h1#bottom-bar-title{
     }  
   
 #sidebar-contact textarea {   
-    width: 400px;  
+    width: 100%;  
     max-width: 400px;  
     height: 150px;  
     line-height: 150%;  
@@ -195,6 +195,171 @@ line-height: 13px;
 }
 
 
+
+
+
+
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.main-content .col-lg-8 {
+		width: 66%;
+		float: left;
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  
+	#top-social {
+		width: auto;
+		float: right;
+		margin: 1.6% -0% 3% 0;
+	}
+
+	#phone-number {
+		color: #283891;
+		font-size: 25px;
+		margin: 0 0 5px 33px;
+		font-weight: 900;
+	}
+	
+	h1#bottom-bar-title {
+		margin: 32px 0px 0 0px;
+		font-size: 17px;
+		color: #fff;
+		font-weight: 700;
+	}
+	
+	#bottom-bar-icons {
+		margin: 0 0 0 0;
+	}
+	
+	#bottom-bar-icons img {
+		margin: 10px 16px;
+		
+	}
+	
+	.navbar-collapse li {
+  		background-image: url("../images/dropdown-bg.png");
+  		background-repeat: repeat-x, repeat-y;
+  		border-bottom: 1px solid #000;
+	
+	}
+	.navbar-collapse li:last-child {
+  		
+  		border-bottom: none;
+	
+	}
+	
+	.navbar-collapse {
+		max-height: 340px;
+		padding-right: 15px;
+		padding-left: 15px;
+		overflow-x: visible;
+		-webkit-overflow-scrolling: touch;
+	}
+	
+	.navbar-nav {
+		margin: 0 -15px 7.5px -15px;
+	}
+	
+	.col-lg-8 {
+		width: 66%;
+		float: left;
+	}
+	
+	.hidden-phone {
+		display: none;
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	#logo {
+		margin: 15px 0 20px 15px;
+		float: left;
+		width: 330px;
+		position: relative;
+	}
+
+
+	#logo img {
+		width: 330px;
+	}
+
+	#phone-number{
+		color: #283891;
+    	font-size: 25px;
+		margin: 0 0 5px 34px;
+		font-weight: 500;
+		
+	}
+
+	#top-social {
+		width: auto;
+		float: right;
+		margin: 1.6% 29% 3% 0;
+	}
+
+	#logo {
+		margin: 15px 0 20px 15px;
+		float: left;
+		width: 260px;
+		position: relative;
+	}
+	
+	.navbar-collapse li {
+  		background-image: url("../images/dropdown-bg.png");
+  		background-repeat: repeat-x, repeat-y;
+  		border-bottom: 1px solid #000;
+	
+	}
+	.navbar-collapse li:last-child {
+  		
+  		border-bottom: none;
+	
+	}
+	
+	.navbar-collapse {
+		max-height: 340px;
+		padding-right: 15px;
+		padding-left: 15px;
+		overflow-x: visible;
+		-webkit-overflow-scrolling: touch;
+	}
+	
+	.navbar-nav {
+		margin: 0 -15px 7.5px -15px;
+	}
+	
+	h1#bottom-bar-title {
+		margin: 10px 0px 0 0px;
+		font-size: 18px;
+		color: #fff;
+		font-weight: 500;
+	}
+	
+	#bottom-bar-icons {
+		margin: 0 0 0 0;
+	}
+	
+	#bottom-bar-icons img {
+		margin: 0 19px;
+		width: 9%;
+	}
+	.sidebar {
+		width: 100%;
+	}
+	
+}
 /*Small Phones Portrait*/
 @media (max-width: 320px) {
 	#logo {
@@ -223,6 +388,7 @@ line-height: 13px;
 		margin: 1.6% 19% 3% 0;
 	}
 	
+	
 	h1#bottom-bar-title {
 		margin: 10px 0px 0 0px;
 		font-size: 18px;
@@ -245,74 +411,8 @@ line-height: 13px;
 		width: 100%;
 	}
 	
-	.fullwidthbanner-container{
-		display:none;
-	}
-}
-
-/*Larger phones and small phones in lanscape*/
-@media (min-width: 321px) and (max-width: 480px) {
-	#logo {
-		margin: 15px 0 20px 15px;
-		float: left;
-		width: 400px;
-		position: relative;
-	}
-
-
-	#logo img {
-		width: 400px;
-	}
-
-	#phone-number{
-		color: #283891;
-    	font-size: 25px;
-		margin: 0 0 5px -8px;
-		font-weight: 500;
-		
-	}
-
-	#top-social {
-		width: auto;
-		float: right;
-		margin: 1.6% 29% 3% 0;
-	}
-
-	#logo {
-		margin: 15px 0 20px 15px;
-		float: left;
-		width: 260px;
-		position: relative;
-	}
-	
-	
-	.sidebar {
-		width: 100%;
-	}
 	
 }
-
-/*tablets and small screens */
-@media (min-width: 481px) and (max-width: 768px) {
-	#top-social {
-		width: auto;
-		float: right;
-		margin: 1.6% -0% 3% 0;
-	}
-
-	#phone-number {
-		color: #283891;
-		font-size: 25px;
-		margin: 0 0 5px 33px;
-		font-weight: 900;
-	}
-	
-	.main-content .col-lg-8 {
-		width: 66%;
-		float: left;
-	}
-}
-
 
 
 
