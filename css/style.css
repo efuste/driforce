@@ -8,7 +8,16 @@ h1, h2, h3, h4, h5, h6, h7 {
 	text-transform: uppercase;
 }	
 
+#page-header-container {
+	clear: both;
+	height: auto;
+	width: 100%;
+}
 
+#page-header-container img {
+	width: 100%;
+	height: auto;
+}
 
 /*Responsive Columns */
 
@@ -117,9 +126,22 @@ h1#bottom-bar-title{
 
 /* Main content area */
 
+.main-content {
+	
+}
+
 .main-content p {
 	line-height: 30px;
 }
+
+.main-content h1 {
+	font-size: 26px;
+}
+
+.main-content h2 {
+	font-size: 20px;
+}
+
 
 .sidebar {
 	border-left: 5px solid #d1d2d4;
@@ -127,6 +149,7 @@ h1#bottom-bar-title{
 	background-color: #c3c4c6;
 	width: 33.33333333333333%;
 	float: left;
+	height: 100%;
 }
 
 .inner {

@@ -1,6 +1,8 @@
 
 jQuery(function($) {
   
+  $divHeight = $(".main-content").height();
+  $("div.row.main-content").css({"height": $divHeight + "px"});
   $(".tool-tips").tooltip();
 	
 	

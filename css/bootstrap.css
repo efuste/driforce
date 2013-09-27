@@ -3234,15 +3234,15 @@ input[type="button"].btn-block {
   min-width: 160px;
   padding: 5px 0 0 0;
   margin: 2px 0 0;
-  font-size: 14px;
+  font-size: 17px;
   list-style: none;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
+  background-image: url("../images/dropdown-bg.png");
+  		background-repeat: repeat-x, repeat-y;
+  		border-bottom: 1px solid #000;
 }
 
 .dropdown-menu.pull-right {
@@ -3257,21 +3257,32 @@ input[type="button"].btn-block {
   background-color: #e5e5e5;
 }
 
+.dropdown-menu > li {
+   	border-bottom: 1px solid #000;
+
+  
+}
+
+
+.dropdown-menu > li:last-child {
+  		
+  		border-bottom: none;
+	
+	}
 .dropdown-menu > li > a {
   display: block;
   padding: 3px 20px;
   clear: both;
-  font-weight: normal;
+  font-weight: 100;
   line-height: 1.428571429;
-  color: #333333;
+  color: #FFFFFF;
   white-space: nowrap;
+  
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #ffffff;
   text-decoration: none;
-  background-color: #428bca;
 }
 
 .dropdown-menu > .active > a,
@@ -4270,6 +4281,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-nav > li {
     float: left;
+    font-size: 18px;
   }
   .navbar-nav > li > a {
    	padding-top: 13px;
