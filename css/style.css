@@ -26,7 +26,9 @@ h1, h2, h3, h4, h5, h6, h7 {
 		float: left;
 }
 
-
+.clear{
+	clear: both;
+}
 /* Header 
 -------------------------------------------------- */
 	#logo {
@@ -178,6 +180,83 @@ h1#bottom-bar-title{
 	font-weight: 200;
 }
 
+#location {
+	margin: 20px 0 0 0;
+}
+
+#case-description {
+	margin:20px 0 0 0;
+}
+
+#insurance-info {
+	margin: 0 0 20px 0;
+}
+.text-field-quarter {
+	padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    margin: 10px 5px 0 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    width: 23.3%; 
+    background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    border-radius: 10px;
+
+}
+.text-field-half{
+ 	padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;
+    margin: 10px 5px 0 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    width: 48%; 
+    background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    border-radius: 10px;
+}
+
+.text-field-full{
+ 	padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    margin-top: 10px;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    width: 97.5%; 
+    background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    border-radius: 10px;
+
+    
+}
+
+.text-area-full {
+	padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    margin-top: 10px;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    width: 97.5%; 
+    background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    border-radius: 10px;
+}
+
 #sidebar-contact input, textarea {   
     padding: 9px;  
     border: solid 1px #E5E5E5;  
@@ -220,6 +299,7 @@ input:focus, textarea:focus {
 
 #footer-container {
 	background-color: #333333;	
+	color: #fff;
 }
 
 #footer-container h4 {
@@ -237,6 +317,18 @@ input:focus, textarea:focus {
 	font-size: 18px;
 }
 
+ul.checklist {
+	padding: 0;
+}
+ul.checklist li {
+	background-image: url(../images/check.png);
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+	padding: 0px 0px 0px 34px;
+	line-height: 34px;
+	list-style-type: none;
+	font-size: 16px;
+}
 
 /* Large desktop */
 @media (min-width: 1200px) {

@@ -7,15 +7,16 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
-
+	
     <title>DriForce Restorations</title>
 	 
 	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" />
    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- css for slider -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- css for font awesome-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
     
 
 
@@ -31,6 +32,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/twitter-bootstrap-hover-dropdown.min.js"></script>
+    <script src="js/send-quickcontact.js"></script>
     <script src="js/script.js"></script>
   </head>
 <!-- NAVBAR
@@ -83,7 +86,7 @@
                   </ul>
                 </li>
                 <li><a href="#">News</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
 
                 
               </ul>

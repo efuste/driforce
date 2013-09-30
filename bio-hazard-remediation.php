@@ -32,7 +32,7 @@
        
         	<div class="col-lg-8">
           		<h1>Dri-Force Bio-Hazard Remediation</h1>
-          			<p>Dri-force Restoration is a trusted provider in biohazard remediation. Biohazards are biological substances that may pose a potential threat to health. Our experienced, knowledgeable, and highly trained technicians are available 24 hours, on an emergency basis, and will respond immediately to the scene. Assessment of the scene is thoroughly performed and action will employ safe, specialized cleaning methods while utilizing the industries most advanced biohazard remediation technology.  Dri-Force Restoration exceeds regulatory compliance to offer the highest quality of work. With the use of state of the art equipment, we guarantee to return your property back to a safe, habitable condition. Our services include general blood clean up, death clean up, industrial accident clean up, hoarding & unsanitary dwelling cleanup, tear gas remediation, and communicable disease cleanup. Listed below you will find a description of our services.</p>
+          			<p>Dri-force Restoration is a trusted provider in biohazard remediation. Biohazards are biological substances that may pose a potential threat to health and the environment. Our experienced and highly trained technicians are available 24 hours, on an emergency basis, and will respond immediately to the scene. Assessment of the scene is thoroughly performed and our action will employ safe and specialized cleaning methods while utilizing the industries most advanced biohazard remediation technology.  Dri-Force Restoration exceeds regulatory compliance to offer the highest quality of work. With the use of state of the art equipment, we guarantee to return your property back to a safe, habitable condition. Our services include general blood clean up, death clean up, industrial accident clean up, hoarding & unsanitary dwelling cleanup, tear gas remediation, and communicable disease cleanup. Listed below you will find a description of our services.</p>
           		<h2>Crime Scene Cleanup</h2>
           			<p>The police have left and the crime scene tape has been discarded, but the dreadful anticipation of cleaning the horrendous crime can pro-long and exacerbate the trauma.
 					Dri-Force Restoration’s highly trained professionals will immediately respond to the scene within 30 minutes to 2 hours after initial call. Our professionals arrive employing specialized cleaning methods, and advanced bio-hazard remediation technology while meeting or exceeding EPA and OSHA protocols, returning your home or business to a safe habitable condition.</p>
@@ -55,37 +55,7 @@ Please contact Dri-Force Restoration at (786) 280-2278 immediately if and when y
           	</div>
         <!-- /.col-lg-4 -->
        
-        <div class="sidebar">
-        	<div class="inner">
-          			<div id="sidebar-contact">
-          				<h4>Contact Us Now for</h4>
-          				<p class="bold-blue">$5oo.oo Towards your Deductible!</p>
-          				<p>We are fully Licensed and Insured.</p>
-          				<form>
-          					<input type="text" value="Name" />
-          					<input type="text" value="Phone" />
-          					<input type="text" value="Case Description"/>
-							<a class="btn btn-default" href="#">View details &raquo;</a>
-
-          				</form>
-        			</div>
-        			
-        			
-        			<div id="sidebar-services">
-        				<h2>Our Services</h2>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        				
-        				
-</ul>
-        				<img src="images/iirc-logo.png"  />
-        			</div>
-        	</div>
-        </div><!-- /.col-lg-4 -->
+       <?php include('sidebar.php'); ?>
       </div>
       </div><!-- /.row -->
 
@@ -98,52 +68,4 @@ Please contact Dri-Force Restoration at (786) 280-2278 immediately if and when y
       
 
     </div><!-- /.container -->
-	<!-- FOOTER -->
-      <footer id="footer-container">
-        <div class="container">
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul class="nav nav-list">
-  							<li class="active"><a href="#">Home</a></li>
-  							<li><a href="#">Water Remediation</a></li>
-  							<li><a href="#">Mold Remediation</a></li>
-  							<li><a href="#">Fire Restoration</a></li>
-        	</div>
-        	
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        	</div>
-        	
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        	</div>
-        	
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        	</div>
-        	<p class="pull-right"><a href="#">Back to top</a></p>
-        	<p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </div>
-      </footer>
-
-   
-  </body>
-</html>
+	<?php require('footer.php'); ?>

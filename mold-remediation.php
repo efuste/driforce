@@ -32,8 +32,8 @@
        
         	<div class="col-lg-8">
           		<h1>Dri-Force Mold Remediation</h1>
-          		<p>Mold are microscopic organisms existent in both inside and outside enviroments. All that is required to initiate a destructive chain reaction of mold amplification is the addition of excess moisture. Mold can be numerous colors such as black, green, and purple, and can be toxic or non-toxic. An obvious sign of mold amplification is musty, moldy, mildew odor. If left untreated mold spores will colonize and spread causing the degradation of clothes, furniture, paintings, and structure. Pro-longed exposure to mold may cause adverse health problems, especially in children, elderly, and people with weakened immune systems. Common signs and symptoms of mold exposure include inflammation, infection, allergic reactions, respiratory problems, nose bleeds, and fevers.  </p>
-				<p>Dri-Force Restoration professionals will quickly respond to your property and asses your mold emergency. 
+          		<p>Mold is a microscopic organism that exists in both inside and outside enviroments. All that is required to initiate a destructive chain reaction of mold is the addition of excess moisture. Mold can be numerous colors such as black, green, and purple, and can be toxic or non-toxic. An obvious sign of mold amplification is musty, moldy, or mildew odor. If left untreated mold spores will colonize and spread causing the degradation of clothes, furniture, paintings, and structure. Pro-longed exposure to mold may cause adverse health problems, especially in children, elderly, and people with weakened immune systems. Common signs and symptoms of mold exposure include inflammation, infection, allergic reactions, respiratory problems, nose bleeds, and fevers.  </p>
+				<p>Dri-Force Restoration professionals will quickly respond to your property and assess your mold emergency. 
 				   A certified mold assessor consultation will allow to determine the source, type of mold present, and scope of damage. 
 				   Immediately after the type of mold is identified and scope of damage is determined, our highly trained professionals will work 
 				   diligently to restore your property to pre-loss condition or better. Dri-Force Restoration professionals will contain mold affected areas
@@ -47,37 +47,7 @@ Please contact Dri-Force Restoration at (786) 280-2278 immediately if and when y
           	</div>
         <!-- /.col-lg-4 -->
        
-        <div class="sidebar">
-        	<div class="inner">
-          			<div id="sidebar-contact">
-          				<h4>Contact Us Now for</h4>
-          				<p class="bold-blue">$5oo.oo Towards your Deductible!</p>
-          				<p>We are fully Licensed and Insured.</p>
-          				<form>
-          					<input type="text" value="Name" />
-          					<input type="text" value="Phone" />
-          					<input type="text" value="Case Description"/>
-							<a class="btn btn-default" href="#">View details &raquo;</a>
-
-          				</form>
-        			</div>
-        			
-        			
-        			<div id="sidebar-services">
-        				<h2>Our Services</h2>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        				
-        				
-</ul>
-        				<img src="images/iirc-logo.png"  />
-        			</div>
-        	</div>
-        </div><!-- /.col-lg-4 -->
+        <?php include('sidebar.php'); ?>
       </div>
       </div><!-- /.row -->
 
@@ -90,52 +60,4 @@ Please contact Dri-Force Restoration at (786) 280-2278 immediately if and when y
       
 
     </div><!-- /.container -->
-	<!-- FOOTER -->
-      <footer id="footer-container">
-        <div class="container">
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul class="nav nav-list">
-  							<li class="active"><a href="#">Home</a></li>
-  							<li><a href="#">Water Remediation</a></li>
-  							<li><a href="#">Mold Remediation</a></li>
-  							<li><a href="#">Fire Restoration</a></li>
-        	</div>
-        	
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        	</div>
-        	
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        	</div>
-        	
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        	</div>
-        	<p class="pull-right"><a href="#">Back to top</a></p>
-        	<p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </div>
-      </footer>
-
-   
-  </body>
-</html>
+	<?php include('footer.php'); ?>

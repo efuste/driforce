@@ -14,26 +14,44 @@
 
 										<!-- THE CAPTIONS IN THIS SLDIE -->
 										<div class="caption very_large_text sfb"
-											 data-x="295"
+											 data-x="280"
 											 data-y="40"
 											 data-speed="300"
 											 data-start="800"
 											 data-easing="easeOutExpo"  >Water Remediation
 										</div>
 										<div class="caption sfb"
-											 data-x="425"
+											 data-x="415"
 											 data-y="120"
 											 data-speed="300"
 											 data-start="800"
 											 data-easing="easeOutExpo"  ><img src="images/water-symbol.png" />
 										</div>
 										
+																		 
 										<div class="caption small_text sfb hidden-phone"
-											 data-x="700"
-											 data-y="250"
+											 data-x="320"
+											 data-y="215"
 											 data-speed="300"
 											 data-start="800"
-											 data-easing="easeOutExpo"  >Lorem ipusm ext goes here and some.
+											 data-easing="easeOutExpo">Abnormal moisture is the main cause of amplification of microorganisms, structural
+										</div>
+										
+										<div class="caption small_text sfb hidden-phone"
+											 data-x="325"	
+											 data-y="240"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo">deterioration, odor, and health issues for building occupants. Contact Dri-Force for
+										</div>
+										
+										<div class="caption small_text sfb hidden-phone"
+											 data-x="465"	
+											 data-y="265"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo">prompt arrival and professional clean up.
+ 
 										</div>
 
 										
@@ -139,26 +157,43 @@
 										<img src="images/biohazardslide.jpg" >
 
 										<div class="caption very_large_text sfb"
-											 data-x="220"
+											 data-x="210"
 											 data-y="40"
 											 data-speed="300"
 											 data-start="800"
 											 data-easing="easeOutExpo"  >Bio-Hazard Remediation
 										</div>
 										<div class="caption sfb"
-											 data-x="425"
+											 data-x="415"
 											 data-y="120"
 											 data-speed="300"
 											 data-start="800"
 											 data-easing="easeOutExpo"  ><img src="images/biohazard-symbol.png" />
 										</div>
-											 
+											 						    
 										<div class="caption small_text sfb hidden-phone"
-											 data-x="700"
-											 data-y="250"
+											 data-x="300"
+											 data-y="215"
 											 data-speed="300"
 											 data-start="800"
-											 data-easing="easeOutExpo"  >Lorem ipusm ext goes here and some.
+											 data-easing="easeOutExpo">Save yourself the daunting task of cleaning, removing and disposing potentially pathogenic 
+										</div>
+										
+										<div class="caption small_text sfb hidden-phone"
+											 data-x="335"	
+											 data-y="240"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo">and hazardous substances caused by trauma, accident crime or death. Our highly
+										</div>
+										
+										<div class="caption small_text sfb hidden-phone"
+											 data-x="410"	
+											 data-y="265"
+											 data-speed="300"
+											 data-start="800"
+											 data-easing="easeOutExpo">trained technicians will respond immediately to the scene.
+ 
 										</div>
 							</li>
 
@@ -194,47 +229,18 @@
        
         	<div class="col-lg-8">
           		<h2>Water, Mold & Bio-hazard Remediation</h2>
+          		<h4>To Preserve and Restore!</h4>
           		<p>Dri-Force Restoration is South Florida’s leader in providing property emergency services for fire, water, mold and bio-hazard restoration and remediation. We are dedicated to serving Miami-Dade, Broward, Palm Beach, Collier, Lee and Monroe Counties. Dri-Force Restoration’s ultimate mission is to restore and remediate at the highest quality, while establishing the health, safety and welfare of built environments.</p>
-				<p>Dri-Force Restoration’s administrative staff and technicians undergo rigorous remediation and restoration training, as well as continuing education while conforming to the highest industry standards and guidlines, known as the Institute of Inspection Cleaning and Restoration Certification (IICRC).</p>
-				<p>All Dri-Force Restoration staff maintain high standards in ethics and expertise based on these IICRC guidelines.
-				<p>Dri-Force Restoration combines unrivaled experience, optimum knowledge, and elite training to provide customers the foremost compassionate care while always ensuring that the restoration and remediation process is as proficient, and stress free as possible. Dri-Force Restoration promises to arrive at the scene within 30 minutes to 2 hours after initial call, assess the extent of property damage and work diligently to restore your property to pre-loss condition or better. Dri-Force Restoration’s highly trained professionals will guide you through the process and guarantee all questions and concerns are answered.</p> 
+				<p>Dri-Force Restoration’s administrative staff and technicians undergo the highest level of remediation and restoration training and continuing education, while conforming to the highest industry standards and guidlines, known as the <a href="http://www.iicrc.org/">Institute of Inspection Cleaning and Restoration Certification (IICRC). </a></p>
+				<p>All Dri-Force Restoration staff maintain high standards in ethics and expertise based on the IICRC guidelines.
+				<p>Dri-Force Restoration combines unrivaled experience, optimum knowledge, and elite training to provide customers compassionate care while always ensuring that the restoration and remediation process is as proficient and stress free as possible. Dri-Force Restoration promises to arrive at the scene within 30 minutes to 2 hours after initial call, assess the extent of property damage and work diligently to restore your property to pre-loss condition or better. Dri-Force Restoration’s highly trained professionals will guide you through the process and guarantee all questionsare answered.</p> 
 				<p>Please contact Dri-Force Restoration at (786) 280-2278 immediately if and when your property has been affected by fire, water, mold, vandalism, and/ or bio-hazard. Time is crucial in limiting damage caused by such unfortunate events.</p>
           	</div>
         <!-- /.col-lg-4 -->
        
-        <div class="sidebar">
-        	<div class="inner">
-          			<div id="sidebar-contact">
-          				<h4>Contact Us Now for</h4>
-          				<p class="bold-blue">$5oo.oo Towards your Deductible!</p>
-          				<p>We are fully Licensed and Insured.</p>
-          				<form>
-          					<input type="text" value="Name" />
-          					<input type="text" value="Phone" />
-          					<input type="text" value="Case Description"/>
-							<a class="btn btn-default" href="#">View details &raquo;</a>
-
-          				</form>
-        			</div>
-        			
-        			
-        			<div id="sidebar-services">
-        				<h2>Our Services</h2>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        				
-        				
-</ul>
-        				<img src="images/iirc-logo.png"  />
-        			</div>
-        	</div>
-        </div><!-- /.col-lg-4 -->
+       <?php include('sidebar.php'); ?>
       </div>
-      </div><!-- /.row -->
+      </div><!--.row -->
 
 
      
@@ -245,52 +251,4 @@
       
 
     </div><!-- /.container -->
-	<!-- FOOTER -->
-      <footer id="footer-container">
-        <div class="container">
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul class="nav nav-list">
-  							<li class="active"><a href="#">Home</a></li>
-  							<li><a href="#">Water Remediation</a></li>
-  							<li><a href="#">Mold Remediation</a></li>
-  							<li><a href="#">Fire Restoration</a></li>
-        	</div>
-        	
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        	</div>
-        	
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        	</div>
-        	
-        	<div class="col-lg-3">
-        		<h4>Pages</h4>
-        				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        				</ul>
-        	</div>
-        	<p class="pull-right"><a href="#">Back to top</a></p>
-        	<p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </div>
-      </footer>
-
-   
-  </body>
-</html>
+	<?php include("footer.php"); ?>

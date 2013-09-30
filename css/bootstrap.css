@@ -302,8 +302,8 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Raleway", san-serif, sans;  
+  font-size: 15px;
   line-height: 1.428571429;
   color: #333333;
   background-color: #ffffff;
@@ -3273,7 +3273,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 3px 20px;
   clear: both;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.428571429;
   color: #FFFFFF;
   white-space: nowrap;

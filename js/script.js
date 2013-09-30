@@ -1,13 +1,21 @@
-
 jQuery(function($) {
+   	
+// Height for sidebar based on container height   	
+$divHeight = $(".main-content").height() + 30;
+$("div.row.main-content").css({"height": $divHeight + "px"});
+
+// Tool tip
+$(".tool-tips").tooltip();
   
-  $divHeight = $(".main-content").height();
-  $("div.row.main-content").css({"height": $divHeight + "px"});
-  $(".tool-tips").tooltip();
-	
-	
-	
-  var tpj=jQuery;
+//Add Hover effect to menus
+$('ul.nav li.dropdown').hover(function() {
+  	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+	}, function() {
+  	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+});
+
+//  Slider 
+var tpj=jQuery;
 				tpj.noConflict();
 
 				tpj(document).ready(function() {
@@ -89,5 +97,56 @@ jQuery(function($) {
 						
 
 });
+
+// Send quick contact javascript
+$('#submit-quickcontact').click( function() {
+		var name   = $('#name').val();
+		var phone    = $('#phone').val();
+		var description = $('#description').val();
+		var counter = 0;
+		
+		$('.loading').fadeIn('fast');
+
+		if (name != ""  && phone != ""  && description != "")
+			{
+				
+				$.ajax(
+					{
+						url: 'sendquickcontact.php',
+						type: 'POST',
+						data: "name=" + name + "&phone=" + phone + "&description=" + description,
+						success: function(result) 
+						{
+							$('.loading').fadeOut('normal');
+							if(result == "email_error") {
+								$('#email').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"}).next('.require').text(' !');
+							
+							} else {
+								
+								$('#name, #phone, #description').val("");
+								$('<div class="success-contact"><img src="images/success.png" alt="" class="succes-icon" />Success! Thank you. </div>').insertAfter('#submit-quickcontact');
+								$('.success-contact').fadeOut(10000, function(){ $(this).remove(); });
+							}
+						}
+					}
+				);
+				return false;
+				
+			} 
+		else 
+			{
+				
+				$('.loading').fadeOut('normal');
+				if(name == "") $('#name').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+				if(phone == "") $('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});	
+				if(description == "") $('#description').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+				return false;
+			}
+	});
+	
+	$('#name, #phone, #description').focus(function(){
+		$(this).val(' ');
+	});
+	
 
 });
