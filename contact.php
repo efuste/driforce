@@ -5,7 +5,7 @@
     <!-- Carousel
     ================================================== -->
    <div id="page-header-container">
-   		<img src="images/mold-remediation-header.jpg" />
+   		<img src="images/contact-us-header.jpg" />
    	</div>
 	<div id="bottom-bar">
 		<div class="container">
@@ -57,6 +57,7 @@
           					<input class="text-field-half" type="text" name="companyName" id="companyName" value="Insurance Agency Name"  />
           					<input class="text-field-half" type="text" name="agentPhone" id="agentPhone" value="Insurance Agenct Phone"  />
           				</fieldset>
+          				
 							<button type="submit" name="submit" class="btn btn-default" id="submit-quickcontact">Submit &raquo;</button>
 							<span class="loading" style="display: none;">Please wait..</span> 
 
@@ -64,7 +65,32 @@
           	</div>
         <!-- /.col-lg-4 -->
        
-       <?php include('sidebar.php'); ?>
+       <div class="sidebar">
+        	<div class="inner">
+          		
+        			<div id="sidebar-services">
+        				<h2>Our Services</h2>
+        				<ul>
+        					<li>&raquo; Water Remediation</li>
+        					<li>&raquo; Mold Remediation</li>
+        					<li>&raquo; Fire Restoration</li>
+        					<li>&raquo; Bio-Hazard Remediation</li>
+        				</ul>
+        				
+        				<h2>Contact Info</h2>
+        				<p>123 Fourth Street</p>
+        				<p>Miami, Fl 33123</p>
+        				
+        				<p><span class="bold-blue">25 HOURS A DAY<br />7 DAYS A WEEK</span></p>
+        				<p><span class="bold-blue">Phone:</span> 333-333-3333</p>
+        				<p><span class="bold-blue">Fax:</span> 333-333-3333</p>
+
+        				
+        				
+        				<img src="images/iirc-logo.png"  />
+        			</div>
+        	</div>
+        </div><!-- /.col-lg-4 -->
       </div>
       </div><!-- /.row -->
 

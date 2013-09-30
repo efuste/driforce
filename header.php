@@ -17,7 +17,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- css for font awesome-->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
-    
+   
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,7 +33,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.themepunch.revolution.min.js"></script>
     <script src="js/twitter-bootstrap-hover-dropdown.min.js"></script>
-    <script src="js/send-quickcontact.js"></script>
     <script src="js/script.js"></script>
   </head>
 <!-- NAVBAR

@@ -1,18 +1,26 @@
 jQuery(function($) {
    	
 // Height for sidebar based on container height   	
-$divHeight = $(".main-content").height() + 30;
-$("div.row.main-content").css({"height": $divHeight + "px"});
+if (screen.width > 767) {
+	$divHeight = $(".main-content").height() + 30;
+	$("div.row.main-content").css({"height": $divHeight + "px"});
+	
+	//Add Hover effect to menus
+	$('ul.nav li.dropdown').hover(function() {
+  		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+		}, function() {
+  	
+  	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+
+	});
+
+}
+
 
 // Tool tip
 $(".tool-tips").tooltip();
   
-//Add Hover effect to menus
-$('ul.nav li.dropdown').hover(function() {
-  	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
-	}, function() {
-  	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
-});
+
 
 //  Slider 
 var tpj=jQuery;
@@ -103,10 +111,11 @@ $('#submit-quickcontact').click( function() {
 		var name   = $('#name').val();
 		var phone    = $('#phone').val();
 		var description = $('#description').val();
-		var counter = 0;
-		
+				
 		$('.loading').fadeIn('fast');
 
+		
+		
 		if (name != ""  && phone != ""  && description != "")
 			{
 				
@@ -119,7 +128,7 @@ $('#submit-quickcontact').click( function() {
 						{
 							$('.loading').fadeOut('normal');
 							if(result == "email_error") {
-								$('#email').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"}).next('.require').text(' !');
+								$('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"}).next('.require').text(' !');
 							
 							} else {
 								

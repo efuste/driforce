@@ -3,14 +3,14 @@
         <div class="container">
         	<div class="col-lg-3">
         		<h4>Pages</h4>
-        				<ul class="nav nav-list">
-  							<li class="active"><a href="#">Home</a></li>
-  							<li><a href="#">Water Remediation</a></li>
-  							<li><a href="#">Mold Remediation</a></li>
-  							<li><a href="#">Fire Restoration</a></li>
-  							<li><a href="#">Remediation</a> </li>
-  							<li><a href="#">News</a></li>
-  							<li><a href="#">Contact Us</a></li>
+        				<ul>
+  							<li><a href="index.php">&raquo; Home</a></li>
+  							<li><a href="water-remediation.php">&raquo; Water Remediation</a></li>
+  							<li><a href="mold-remediation.php">&raquo; Mold Remediation</a></li>
+  							<li><a href="fire-restoration.php">&raquo; Fire Restoration</a></li>
+  							<li><a href="bio-hazard-remediation.php">&raquo; Bio-Hazard Remediation</a> </li>
+  							<li><a href="news.php>&raquo; News</a></li>
+  							<li><a href="contact.php">&raquo; Contact Us</a></li>
   						</ul>
 
         	</div>
@@ -18,24 +18,22 @@
         	<div class="col-lg-3">
         		<h4>Service</h4>
         				<ul>
-        					<li>Water Remediation</li>
-        					<li>Mold Remediation</li>
-        					<li>Fire Restoration</li>
-        					<li>Bio-Hazard Remediation</li>
-        					<li>Lee County</li>
-        					<li>Monroe County</li>
+        					<li><a href="water-remediation.php">&raquo; Water Remediation</a></li>
+  							<li><a href="mold-remediation.php">&raquo; Mold Remediation</a></li>
+  							<li><a href="fire-restoration.php">&raquo; Fire Restoration</a></li>
+  							<li><a href="bio-hazard-remediation.php">&raquo; Bio-Hazard Remediation</a> </li>
         				</ul>
         	</div>
         	
         	<div class="col-lg-3">
         		<h4>Service Areas</h4>
         				<ul>
-        					<li>Miami-Dade</li>
-        					<li>Broward County</li>
-        					<li>Palm Beach</li>
-        					<li>Collier County</li>
-        					<li>Lee County</li>
-        					<li>Monroe County</li>
+        					<li>&raquo; Miami-Dade</li>
+        					<li>&raquo; Broward County</li>
+        					<li>&raquo; Palm Beach</li>
+        					<li>&raquo; Collier County</li>
+        					<li>&raquo; Lee County</li>
+        					<li>&raquo; Monroe County</li>
         				</ul>
         	</div>
         	
@@ -53,7 +51,7 @@
         </div>            
         <div class="container">
         	<div class="disclaimer">       
-        		<p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        		<p>&copy; 2013 Dri-Force Restoration, Inc. </p>
         	</div>
 		</div>
       </footer>
