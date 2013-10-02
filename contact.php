@@ -34,7 +34,7 @@
         	<div class="col-lg-8">
           				<h1>Contact Dri-Force Restoration</h1>
           				<p>Please use the form below to get in touch with us.</p>
-          				<form action="#" id="contact">
+          				<form action="#" id="main-contact">
           					<input class="text-field-half" type="text" name="fname" id="fname" value="First Name"  />
           					<input class="text-field-half" type="text" name="lname" id="lname" value="Last Name"  />
           					<input class="text-field-half" type="text" name="phone" id="phone" value="Phone Number"  />
@@ -57,8 +57,7 @@
           					<input class="text-field-half" type="text" name="companyName" id="companyName" value="Insurance Agency Name"  />
           					<input class="text-field-half" type="text" name="agentPhone" id="agentPhone" value="Insurance Agenct Phone"  />
           				</fieldset>
-          				
-							<button type="submit" name="submit" class="btn btn-default" id="submit-quickcontact">Submit &raquo;</button>
+							<button type="submit" name="submit" class="btn btn-default" id="submit-main	contact">Submit &raquo;</button>
 							<span class="loading" style="display: none;">Please wait..</span> 
 
           				</form>

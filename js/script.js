@@ -1,21 +1,50 @@
 jQuery(function($) {
-   	
-// Height for sidebar based on container height   	
-if (screen.width > 767) {
+
+// Height for sidebar based on container height
+if ($(window).width() > 767) {
 	$divHeight = $(".main-content").height() + 30;
 	$("div.row.main-content").css({"height": $divHeight + "px"});
-	
-	//Add Hover effect to menus
-	$('ul.nav li.dropdown').hover(function() {
-  		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
-		}, function() {
-  	
-  	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
-
-	});
-
 }
 
+$(window).resize(function() {
+   if ($(window).width() > 767) {
+	
+		//Add Hover effect to menus
+		$('ul.nav li.dropdown').unbind('hover');
+		$('ul.nav li.dropdown').hover(function() {
+  			$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+		}, function() {
+  	
+  	
+  		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+		});
+		
+		$(".toggle" ).show();
+	}
+	else {
+   	$(".toggle" ).hide();
+   	$( ".opener" ).unbind("click");  
+   	$( ".opener" ).click(function() {
+     	$(this).next('.toggle').slideToggle();
+   	});
+	}
+
+}).resize();
+
+
+// Scroll to top
+$(function () {
+  		$.scrollUp({
+    	scrollName: 'scrollUp', // Element ID
+    	topDistance: '300', // Distance from top before showing element (px)
+    	topSpeed: 300, // Speed back to top (ms)
+    	animation: 'fade', // Fade, slide, none
+    	animationInSpeed: 200, // Animation in speed (ms)
+    	animationOutSpeed: 200, // Animation out speed (ms)
+    	scrollText: '', // Text for element
+    	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+  		});
+	});
 
 // Tool tip
 $(".tool-tips").tooltip();
@@ -106,19 +135,15 @@ var tpj=jQuery;
 
 });
 
-// Send quick contact javascript
-$('#submit-quickcontact').click( function() {
+// Send main contact javascript
+$('#submit-maincontact').click( function() {
 		var name   = $('#name').val();
 		var phone    = $('#phone').val();
 		var description = $('#description').val();
-				
 		$('.loading').fadeIn('fast');
 
-		
-		
-		if (name != ""  && phone != ""  && description != "")
+		if ((name != "" && name !="Name (required)")  && (phone != "" && phone != "Phone (required)")  && description != "")
 			{
-				
 				$.ajax(
 					{
 						url: 'sendquickcontact.php',
@@ -126,13 +151,16 @@ $('#submit-quickcontact').click( function() {
 						data: "name=" + name + "&phone=" + phone + "&description=" + description,
 						success: function(result) 
 						{
+							alert(result);
 							$('.loading').fadeOut('normal');
-							if(result == "email_error") {
+							if(result == "phone_error") {
 								$('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"}).next('.require').text(' !');
 							
 							} else {
 								
 								$('#name, #phone, #description').val("");
+							    $('#name, #phone, #description').css({"background":"#FFFCFC","border-bottom":"none"})
+
 								$('<div class="success-contact"><img src="images/success.png" alt="" class="succes-icon" />Success! Thank you. </div>').insertAfter('#submit-quickcontact');
 								$('.success-contact').fadeOut(10000, function(){ $(this).remove(); });
 							}
@@ -144,18 +172,65 @@ $('#submit-quickcontact').click( function() {
 			} 
 		else 
 			{
-				
+				alert("inside else");
 				$('.loading').fadeOut('normal');
-				if(name == "") $('#name').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
-				if(phone == "") $('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});	
-				if(description == "") $('#description').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+				if(name == "" || name == "Name (required)") $('#name').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+				if(phone == "" || phone == "Phone (required)") $('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});	
+				return false;
+			}
+	});
+
+// Send quick contact javascript
+$('#submit-quickcontact').click( function() {
+		var name   = $('#name').val();
+		var phone    = $('#phone').val();
+		var description = $('#description').val();
+		$('.loading').fadeIn('fast');
+
+		if ((name != "" && name !="Name (required)")  && (phone != "" && phone != "Phone (required)"))
+			{
+				$.ajax(
+					{
+						url: 'sendquickcontact.php',
+						type: 'POST',
+						data: "name=" + name + "&phone=" + phone + "&description=" + description,
+						success: function(result) 
+						{
+							$('.loading').fadeOut('normal');
+							if(result == "phone_error") {
+								$('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"}).next('.require').text(' !');
+							
+							} else {
+								
+								$('#name, #phone, #description').val("");
+							    $('#name, #phone, #description').css({"background":"#FFFCFC","border-bottom":"none"})
+
+								$('<div class="success-contact"><img src="images/success.png" alt="" class="succes-icon" />Success! Thank you. </div>').insertAfter('#submit-quickcontact');
+								$('.success-contact').fadeOut(10000, function(){ $(this).remove(); });
+							}
+						}
+					}
+				);
+				return false;
+				
+			} 
+		else 
+			{
+				$('.loading').fadeOut('normal');
+				if(name == "" || name == "Name (required)") $('#name').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+				if(phone == "" || phone == "Phone (required)") $('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});	
 				return false;
 			}
 	});
 	
+	//
 	$('#name, #phone, #description').focus(function(){
 		$(this).val(' ');
+	    $(this).css({"background":"#FFFCFC","border-bottom":"none"})
+
 	});
 	
-
+	
 });
+
+$(window).resize($);

@@ -33,6 +33,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.themepunch.revolution.min.js"></script>
     <script src="js/twitter-bootstrap-hover-dropdown.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/script.js"></script>
   </head>
 <!-- NAVBAR
