@@ -184,15 +184,13 @@ $('#submit-maincontact').click( function() {
 							if(result == "phone_error") {
 								$('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
 							
-							} else if(result == "agent_phone_error"){
-							    $('#agentPhone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+							} 
+							
+							else {
+								alert("inside else");
+								$('#fname, #lname, #phone, #email ').css({"background":"#FFFCFC","border-bottom":"none"});
 
-							} else {
-								
-								$('#name, #phone, #description').val("");
-							    $('#name, #phone, #description').css({"background":"#FFFCFC","border-bottom":"none"})
-
-								$('<div class="success-contact"><img src="images/success.png" alt="" class="succes-icon" />Success! Thank you. </div>').insertAfter('#submit-quickcontact');
+								$('<div class="success-contact"><img src="images/success.png" alt="" class="succes-icon" />Success! Thank you. </div>').insertAfter('#submit-maincontact');
 								$('.success-contact').fadeOut(10000, function(){ $(this).remove(); });
 							}
 						}

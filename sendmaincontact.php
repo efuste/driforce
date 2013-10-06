@@ -21,12 +21,9 @@ $companyName = ucwords($_POST['companyName']);
 $agentPhone = $_POST['agentPhone']; 
 		
   	
-  	if(!is_valid_phonenumber($phone)) {
+    
+    if(!is_valid_phonenumber($phone)) {
 		echo  'phone_error';
-	}
-
-  	else if(!is_valid_phonenumber($agentPhone)){
-		echo  'agent_phone_error'; 
 	}
  	else {
 	
