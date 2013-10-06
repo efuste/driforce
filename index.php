@@ -207,10 +207,10 @@
 		<div class="container">
 			<h1 id="bottom-bar-title">24 Hour Emergency Service</h1>
 			<div id="bottom-bar-icons">
-				<img src="images/water-icon.png" />
-				<img src="images/mold-icon.png" />
-				<img src="images/fire-icon.png" />
-				<img src="images/biohazard-icon.png" />
+				<a href="water-remediation.php"><img src="images/water-icon.png" /></a>
+				<a href="mold-remediation.php"><img src="images/mold-icon.png" /></a>
+				<a href="fire-restoration.php"><img src="images/fire-icon.png" /></a>
+				<a href="bio-hazard-remediation.php"><img src="images/biohazard-icon.png" /></a>
 			</div>
 		</div>
 		<div class="clearfix"></div>	

@@ -9,11 +9,11 @@
 	<div id="bottom-bar">
 		<div class="container">
 			<h1 id="bottom-bar-title">24 Hour Emergency Service</h1>
-			<div id="bottom-bar-icons">
-				<img src="images/water-icon.png" />
-				<img src="images/mold-icon.png" />
-				<img src="images/fire-icon.png" />
-				<img src="images/biohazard-icon.png" />
+		<div id="bottom-bar-icons">
+				<a href="water-remediation.php"><img src="images/water-icon.png" /></a>
+				<a href="mold-remediation.php"><img src="images/mold-icon.png" /></a>
+				<a href="fire-restoration.php"><img src="images/fire-icon.png" /></a>
+				<a href="bio-hazard-remediation.php"><img src="images/biohazard-icon.png" /></a>
 			</div>
 		</div>
 		<div class="clearfix"></div>	
@@ -52,6 +52,8 @@ Dri-Force Restoration will dispatch tear gas cleaning professionals to clean, an
 </p>
 					<p>Dri-Force Restoration professionals will safely remediate, and biohazard in the most challenging bio-hazard remediation situations 24 hours a day, seven days a week, 365 days a year. We believe in unsurpassed customer service and always are readily available to answer and address all questions and explain the pertinent recovery process. We will record, document and report all findings to your insurance carrier immediately after the completion of the job.
 Please contact Dri-Force Restoration at (786) 280-2278 immediately if and when your property is affected by a bio-hazard.</p>
+          	
+          		<a class="button-blue" href="contact.php">Contact Us</a>
           	</div>
         <!-- /.col-lg-4 -->
        

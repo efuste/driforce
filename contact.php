@@ -11,10 +11,10 @@
 		<div class="container">
 			<h1 id="bottom-bar-title">24 Hour Emergency Service</h1>
 			<div id="bottom-bar-icons">
-				<img src="images/water-icon.png" />
-				<img src="images/mold-icon.png" />
-				<img src="images/fire-icon.png" />
-				<img src="images/biohazard-icon.png" />
+				<a href="water-remediation.php"><img src="images/water-icon.png" /></a>
+				<a href="mold-remediation.php"><img src="images/mold-icon.png" /></a>
+				<a href="fire-restoration.php"><img src="images/fire-icon.png" /></a>
+				<a href="bio-hazard-remediation.php"><img src="images/biohazard-icon.png" /></a>
 			</div>
 		</div>
 		<div class="clearfix"></div>	
@@ -57,7 +57,7 @@
           					<input class="text-field-half" type="text" name="companyName" id="companyName" value="Insurance Agency Name"  />
           					<input class="text-field-half" type="text" name="agentPhone" id="agentPhone" value="Insurance Agenct Phone"  />
           				</fieldset>
-							<button type="submit" name="submit" class="btn btn-default" id="submit-maincontact">Submit &raquo;</button>
+							<button type="submit" name="submit" class="button-blue" id="submit-maincontact">Submit &raquo;</button>
 							<span class="loading" style="display: none;">Please wait..</span> 
 
           				</form>

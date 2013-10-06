@@ -22,8 +22,8 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
 
      <!-- Bootstrap core JavaScript
@@ -84,7 +84,7 @@
                     <li><a href="bio-hazard-remediation.php">Bio-Hazard Remediation</a></li>
                   </ul>
                 </li>
-                <li><a href="#">News</a></li>
+                <li><a href="news.php">News</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
 
                 

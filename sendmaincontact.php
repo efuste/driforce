@@ -51,10 +51,7 @@ $agentPhone = $_POST['agentPhone'];
 		mail($mailto, $subject, $email_message, "From: \"$vname\" <".$email.">\nReply-To: \"". ucwords($name). "\" <".$email.">\nX-Mailer: PHP/" . phpversion() );
 	}
 	
-?>
-
-<?php
-function is_valid_phonenumber($number) {
+	function is_valid_phonenumber($number) {
 
   	// strip all valid chars
   		$stripped = preg_replace( '{[0-9 +-]}', '', $number );
@@ -72,5 +69,5 @@ function is_valid_phonenumber($number) {
 
   	// if nothing fails before this, we're good to go
   	return true;
-	}
+	}	
 ?>

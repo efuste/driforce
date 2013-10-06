@@ -214,6 +214,10 @@ h1#bottom-bar-title{
 	padding: 0;
 }
 
+#footer-container{
+	
+}
+
 #footer-container ul {
 	list-style: none;
 	padding: 0;
@@ -380,6 +384,81 @@ ul.checklist li {
 	font-size: 16px;
 }
 
+/* Blog styling */
+
+.post-info h1 {
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+.post-info ul {
+	float: left;
+	color: #d4d8e5;
+	list-style: none;
+	padding: 0;
+	
+}
+
+.post-info ul li{
+	float: left;
+	margin-right: 25px;
+	color: #d4d8e5;
+	font-size: 14px;
+	color: #9f9f9f;
+	
+}
+
+.post-info img {
+	width: 100%;
+	height: auto;
+}
+
+
+/* Button css */
+.button-blue {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #28378f), color-stop(1, #1d2867) );
+	background:-moz-linear-gradient( center top, #28378f 5%, #1d2867 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#28378f', endColorstr='#1d2867');
+	background-color:#28378f;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #ffffff;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:36px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+}
+.button-blue:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1d2867), color-stop(1, #28378f) );
+	background:-moz-linear-gradient( center top, #1d2867 5%, #28378f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1d2867', endColorstr='#28378f');
+	background-color:#1d2867;
+	text-decoration: none;
+	color: #fff;	
+}
+
+.button-blue:active {
+	position:relative;
+	top:1px;
+}
 /* Large desktop */
 @media (min-width: 1200px) {
 

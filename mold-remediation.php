@@ -10,10 +10,10 @@
 		<div class="container">
 			<h1 id="bottom-bar-title">24 Hour Emergency Service</h1>
 			<div id="bottom-bar-icons">
-				<img src="images/water-icon.png" />
-				<img src="images/mold-icon.png" />
-				<img src="images/fire-icon.png" />
-				<img src="images/biohazard-icon.png" />
+				<a href="water-remediation.php"><img src="images/water-icon.png" /></a>
+				<a href="mold-remediation.php"><img src="images/mold-icon.png" /></a>
+				<a href="fire-restoration.php"><img src="images/fire-icon.png" /></a>
+				<a href="bio-hazard-remediation.php"><img src="images/biohazard-icon.png" /></a>
 			</div>
 		</div>
 		<div class="clearfix"></div>	
@@ -44,6 +44,7 @@
 				<p>Our number one priority is to safely remediate, eliminate mold, and prevent future mold growth in the most challenging mold remediation situations 24 hours a day, 7 days a week, 365 days a year. We believe in unsurpassed customer service and always are readily available to answer and address all questions and explain the pertinent recovery process. We will record, document and report all findings to your insurance carrier immediately after the completion of the job.
 Please contact Dri-Force Restoration at (786) 280-2278 immediately if and when your property is affected by mold growth.</p>
 				
+				<a class="button-blue" href="contact.php">Contact Us</a>
           	</div>
         <!-- /.col-lg-4 -->
        

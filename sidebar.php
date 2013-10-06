@@ -8,9 +8,8 @@
           					<input type="text" name="name" id="name" value="Name (required)" />
           					<input type="text" name="phone" id="phone" value="Phone (required)" />
           					<textarea class="text-area-full" type="text" name"description" id="description" />Case Description</textarea><br />
-							<button type="submit" name="submit" class="btn btn-default" id="submit-quickcontact">Submit &raquo;</button>
+							<button type="submit" name="submit" class="button-blue" id="submit-quickcontact">Submit &raquo;</button>
 							<span class="loading" style="display: none;">Please wait..</span> 
-
           				</form>
           				
           			
