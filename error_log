@@ -1,0 +1,1 @@
+[01-Oct-2013 08:38:14] PHP Fatal error:  Call to undefined function  isnan() in /home/driforce/public_html/sendquickcontact.php on line 13

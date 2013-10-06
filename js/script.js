@@ -8,6 +8,7 @@ if ($(window).width() > 767) {
 
 $(window).resize(function() {
    if ($(window).width() > 767) {
+   		
 	
 		//Add Hover effect to menus
 		$('ul.nav li.dropdown').unbind('hover');
@@ -22,10 +23,19 @@ $(window).resize(function() {
 		$(".toggle" ).show();
 	}
 	else {
-   	$(".toggle" ).hide();
-   	$( ".opener" ).unbind("click");  
-   	$( ".opener" ).click(function() {
-     	$(this).next('.toggle').slideToggle();
+   		$(".toggle" ).hide();
+   		$( ".opener" ).unbind("click");  
+   		$( ".opener" ).click(function() {
+     		$(this).next('.toggle').slideToggle();
+     	
+     			if($(this).hasClass("opener")){
+					$(this).removeClass( "opener" ).addClass("opener-active");
+					
+
+     			}
+     			else {
+     				$(this).removeClass("opener-active").addClass( "opener" );
+				}     	
    	});
 	}
 
@@ -137,25 +147,46 @@ var tpj=jQuery;
 
 // Send main contact javascript
 $('#submit-maincontact').click( function() {
-		var name   = $('#name').val();
-		var phone    = $('#phone').val();
-		var description = $('#description').val();
+		var fname = $('#fname').val();
+		var lname = $('#lname').val();
+		var phone = $('#phone').val();
+		var email = $('#email').val();
+		
+		var address = $('#address').val();
+		var city = $('#city').val();
+		var state = $('#state').val();
+		var zip = $('#zip').val();
+		
+		var description    = $('#description').val();
+		
+		var agentName = $('#agentName').val();
+		var companyName = $('#companyName').val();
+		var agentPhone = $('#agentPhone').val(); 
+		
+		alert(agentPhone);
+		
 		$('.loading').fadeIn('fast');
 
-		if ((name != "" && name !="Name (required)")  && (phone != "" && phone != "Phone (required)")  && description != "")
+		if ((fname != "" && fname !="First Name (required)") && (lname != "" && lname !="First Name (required)")  && (phone != "" && phone != "Phone (required)")  && (email != "" && email != "Email (required)"))
 			{
 				$.ajax(
 					{
-						url: 'sendquickcontact.php',
+
+						url: 'sendmaincontact.php',
 						type: 'POST',
-						data: "name=" + name + "&phone=" + phone + "&description=" + description,
+						data: "fname=" + fname + "&lname" + lname + "&phone=" + phone + "&email" + email + "&address" + address + 
+							  "&city" + city + "&state" + state + "&zip" + zip + "&description=" + description + 
+							  "&agentName" + agentName + "&companyName" + companyName + "&agentPhone" + agentPhone,
 						success: function(result) 
 						{
 							alert(result);
 							$('.loading').fadeOut('normal');
 							if(result == "phone_error") {
-								$('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"}).next('.require').text(' !');
+								$('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
 							
+							} else if(result == "agent_phone_error"){
+							    $('#agentPhone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+
 							} else {
 								
 								$('#name, #phone, #description').val("");
@@ -172,13 +203,17 @@ $('#submit-maincontact').click( function() {
 			} 
 		else 
 			{
-				alert("inside else");
 				$('.loading').fadeOut('normal');
-				if(name == "" || name == "Name (required)") $('#name').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+				if(fname == "" || fname == "First Name (required)") $('#fname').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+				if(lname == "" || lname == "Last Name (required)") $('#lname').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
 				if(phone == "" || phone == "Phone (required)") $('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});	
+				if(email == "" || email == "Email (required)") $('#email').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+
 				return false;
 			}
-	});
+			
+			
+});
 
 // Send quick contact javascript
 $('#submit-quickcontact').click( function() {
@@ -223,14 +258,16 @@ $('#submit-quickcontact').click( function() {
 			}
 	});
 	
-	//
-	$('#name, #phone, #description').focus(function(){
+	
+	$('#name, #fname, #lname, #email, #phone').focus(function(){
 		$(this).val(' ');
-	    $(this).css({"background":"#FFFCFC","border-bottom":"none"})
+	    $(this).css({"background":"#FFFCFC","border-bottom":"none"});
 
 	});
 	
 	
 });
+
+	
 
 $(window).resize($);

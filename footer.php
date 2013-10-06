@@ -1,7 +1,7 @@
 <!-- FOOTER -->
       <footer id="footer-container">
         <div class="container">
-        	<div class="col-lg-3 mob-toggle">
+        	<div id="test" class="col-lg-3 mob-toggle">
         		
         			<h4>Pages</h4>
         			<span class="opener">&nbsp;</span>
