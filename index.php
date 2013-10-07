@@ -235,6 +235,9 @@
 				<p>All Dri-Force Restoration staff maintain high standards in ethics and expertise based on the IICRC guidelines.
 				<p>Dri-Force Restoration combines unrivaled experience, optimum knowledge, and elite training to provide customers compassionate care while always ensuring that the restoration and remediation process is as proficient and stress free as possible. Dri-Force Restoration promises to arrive at the scene within 30 minutes to 2 hours after initial call, assess the extent of property damage and work diligently to restore your property to pre-loss condition or better. Dri-Force Restoration’s highly trained professionals will guide you through the process and guarantee all questionsare answered.</p> 
 				<p>Please contact Dri-Force Restoration at (786) 280-2278 immediately if and when your property has been affected by fire, water, mold, vandalism, and/ or bio-hazard. Time is crucial in limiting damage caused by such unfortunate events.</p>
+          						<a class="button-blue" href="contact.php">Contact Us</a>
+
+          	
           	</div>
         <!-- /.col-lg-4 -->
        

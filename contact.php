@@ -77,12 +77,10 @@
         				</ul>
         				
         				<h2>Contact Info</h2>
-        				<p>123 Fourth Street</p>
-        				<p>Miami, Fl 33123</p>
-        				
+        		
         				<p><span class="bold-blue">25 HOURS A DAY<br />7 DAYS A WEEK</span></p>
-        				<p><span class="bold-blue">Phone:</span> 333-333-3333</p>
-        				<p><span class="bold-blue">Fax:</span> 333-333-3333</p>
+        				<p><span class="bold-blue">Phone:</span> 786.280.2278</p>
+        				<p><span class="bold-blue">Emil:</span> driforce1@gmail.com</p>
 
         				
         				

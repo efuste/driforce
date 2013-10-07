@@ -1,7 +1,7 @@
 <?php
 
 
-$mailto   = "erik.fuste@pxl83.com"; 
+$mailto   = "driforce1@gmail.com"; 
 $subject  = "Website Quick Contact"; 
 $name     = ucwords($_POST['name']); 
 $phone     = $_POST['phone']; 

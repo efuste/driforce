@@ -53,13 +53,10 @@
         		<h4>Contact Dri-Force</h4>
         		<span class="opener">&nbsp;</span>
         		  <div class="toggle">
-        				<p>Address<br />
-        					Miami, Fl 33333
-        				</p>
         				<p>24 Hours A Day</p>
         				<p>7 Days A Week</p>
-        				<p>Phone: </p>
-        				<p>Fax: </p>
+        				<p>Phone: 786-280-2278</p>
+        				<p>Email: driforce1@gmail.com </p>
         		</div>
         	</div>
         </div>            

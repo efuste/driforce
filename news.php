@@ -4,7 +4,7 @@
     <!-- Carousel
     ================================================== -->
    	<div id="page-header-container">
-   		<img src="images/fire-restoration-header.jpg" />
+   		<img src="images/blog-listing-header.jpg" />
    	</div>
 	<div id="bottom-bar">
 		<div class="container">
@@ -42,8 +42,16 @@
           			
           			<img src="images/place-holder.jpg" />
           			
-          			<p>Excerpt from blog.</p>
+          			<p>Lorem ipsum dolor sit amet, et nemore eleifend cum, an vel discere fabellas quaestio, quas novum ex vis. Cum hinc nemore intellegebat ut, quaeque accusamus ei vim. Iudico doming denique eam ut, paulo deserunt vis an. Has mazim placerat honestatis in, te dolor singulis democritum vim. Mea id delectus ponderum.</p>
+          		
+          		<div class="read-more">
+          			<a href="#">Read More...</a>
           		</div>
+          		          			<div class="clear"></div>
+
+          		</div>
+          		
+          		
           			
           	
           	</div>

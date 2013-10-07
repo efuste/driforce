@@ -31,7 +31,7 @@
        
         	<div class="col-lg-8">
           		<h1>Dri-Force Water Remediation</h1>
-				<p>Excessive water has the potential to cause many problems in a built environment. The elements necessary to support microbial growth are always present. owever, a destructive chain reaction occurs with the addition of excess moisture. Abnormal moisture is the main cause of rapid development of microorganisms, which in turn cause structural deterioration, odor, and potential health issues for building occupants. </p>
+				<p>Excessive water has the potential to cause many problems in a built environment. The elements necessary to support microbial growth are always present. However, a destructive chain reaction occurs with the addition of excess moisture. Abnormal moisture is the main cause of rapid development of microorganisms, which in turn cause structural deterioration, odor, and potential health issues for building occupants. </p>
 				
 				<h2>Common Causes of Water Damage</h2>
 				<div class="col-lg-6">

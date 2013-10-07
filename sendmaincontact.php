@@ -1,54 +1,62 @@
 <?php
 
 
-$mailto   = "erik.fuste@pxl83.com"; 
+$mailto   = "driforce1@gmail.com"; 
 $subject  = "Website Main Contact"; 
 
 $fname     = ucwords($_POST['fname']); 
 $lname     = ucwords($_POST['lname']); 
 $phone     = $_POST['phone']; 
-$email = ucwords($_POST['email']);
+$email =     $_POST['email'];
 
-$address = ucwords($_POST['address']); 
-$city = ucwords($_POST['city']); 
+$address = $_POST['address']; 
+$city = $_POST['city']; 
 $state = ucwords($_POST['state']); 
-$zip = ucwords($_POST['zip']); 
+$zip = $_POST['zip']; 
 
-$description     = ucwords($_POST['description']);
+$description     = $_POST['description'];
 
-$agentName = ucwords($_POST['agentName']); 
-$companyName = ucwords($_POST['companyName']); 
+$agentName = $_POST['agentName']; 
+$companyName = $_POST['companyName']; 
 $agentPhone = $_POST['agentPhone']; 
 		
-  	
     
     if(!is_valid_phonenumber($phone)) {
 		echo  'phone_error';
 	}
+	else if (!eregi("^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$", $email)) {
+    	echo 'email_error';
+	}
+	else if(!is_valid_phonenumber($agentPhone)){
+		echo 'agent_phone_error';
+	}
+	
  	else {
 	
 	//send enquiry
 
 	$email_message="\n\n" .
 		"Name: " .
-		ucwords($fname) . " " . ucwords($lname) .
+		$fname . " " . $lname .
 		"\n" .
-		"Phone: " . ucwords($phone) .
+		"Phone: " . $phone .
 		"\n" .
-		"Email: " . ucwords($email) .
+		"Email: " . $email .
 		"\n" .
-		"Address: " . ucwords($address) .
-		"\n" . ucwords($city) . " " . ucwords($state) . ucwords($zip) .
+		"Address: " . $address .
+		"\n" . 
+		 $city . ",  " . $state . "  " .  $zip .
+		"\n" .
 		"Case Description: " . $description .
 		"\n" .
-		"Agent Name: " . ucwords($agentName) . 
+		"Agent Name: " . $agentName . 
 		"\n" .
-		"Insurance Company: " . ucfirst($companyName) .
+		"Insurance Company: " . $companyName .
 		"\n" . 
 		"Agent Phone: " . $agentPhone;
 
 		$email_message = trim(stripslashes($email_message));
-		mail($mailto, $subject, $email_message, "From: \"$vname\" <".$email.">\nReply-To: \"". ucwords($name). "\" <".$email.">\nX-Mailer: PHP/" . phpversion() );
+		mail($mailto, $subject, $email_message, "From: \"$vname\" <".$email.">\nReply-To: \"". ucwords($fname). "\" <".$email.">\nX-Mailer: PHP/" . phpversion() );
 	}
 	
 	function is_valid_phonenumber($number) {

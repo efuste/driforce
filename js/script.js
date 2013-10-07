@@ -163,8 +163,6 @@ $('#submit-maincontact').click( function() {
 		var companyName = $('#companyName').val();
 		var agentPhone = $('#agentPhone').val(); 
 		
-		alert(agentPhone);
-		
 		$('.loading').fadeIn('fast');
 
 		if ((fname != "" && fname !="First Name (required)") && (lname != "" && lname !="First Name (required)")  && (phone != "" && phone != "Phone (required)")  && (email != "" && email != "Email (required)"))
@@ -174,29 +172,34 @@ $('#submit-maincontact').click( function() {
 
 						url: 'sendmaincontact.php',
 						type: 'POST',
-						data: "fname=" + fname + "&lname" + lname + "&phone=" + phone + "&email" + email + "&address" + address + 
-							  "&city" + city + "&state" + state + "&zip" + zip + "&description=" + description + 
-							  "&agentName" + agentName + "&companyName" + companyName + "&agentPhone" + agentPhone,
+						data: "fname=" + fname + "&lname=" + lname + "&phone=" + phone + "&email=" + email + "&address=" + address + 
+							  "&city=" + city + "&state=" + state + "&zip=" + zip + "&description=" + description + 
+							  "&agentName=" + agentName + "&companyName=" + companyName + "&agentPhone=" + agentPhone,
 						success: function(result) 
 						{
-							alert(result);
 							$('.loading').fadeOut('normal');
+							
 							if(result == "phone_error") {
 								$('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
-							
+							} 
+							else if (result == "email_error"){
+								$('#email').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
+							} 
+							else if (result == "agent_phone_error"){
+								$('#agentPhone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
 							} 
 							
+							
 							else {
-								alert("inside else");
-								$('#fname, #lname, #phone, #email ').css({"background":"#FFFCFC","border-bottom":"none"});
+								$('#fname, #lname, #phone, #email, #agentPhone ').css({"background":"#FFFCFC","border-bottom":"none"});
 
 								$('<div class="success-contact"><img src="images/success.png" alt="" class="succes-icon" />Success! Thank you. </div>').insertAfter('#submit-maincontact');
 								$('.success-contact').fadeOut(10000, function(){ $(this).remove(); });
 							}
 						}
-					}
-				);
-				return false;
+					});
+					
+					return false;
 				
 			} 
 		else 
@@ -209,6 +212,8 @@ $('#submit-maincontact').click( function() {
 
 				return false;
 			}
+			
+			
 			
 			
 });
@@ -236,7 +241,7 @@ $('#submit-quickcontact').click( function() {
 							} else {
 								
 								$('#name, #phone, #description').val("");
-							    $('#name, #phone, #description').css({"background":"#FFFCFC","border-bottom":"none"})
+							    $('#name, #phone, #description').css({"background":"#FFFCFC","border-bottom":"none"});
 
 								$('<div class="success-contact"><img src="images/success.png" alt="" class="succes-icon" />Success! Thank you. </div>').insertAfter('#submit-quickcontact');
 								$('.success-contact').fadeOut(10000, function(){ $(this).remove(); });
@@ -254,15 +259,15 @@ $('#submit-quickcontact').click( function() {
 				if(phone == "" || phone == "Phone (required)") $('#phone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});	
 				return false;
 			}
+			
+			
 	});
 	
 	
-	$('#name, #fname, #lname, #email, #phone').focus(function(){
-		$(this).val(' ');
-	    $(this).css({"background":"#FFFCFC","border-bottom":"none"});
-
-	});
-	
+$('#fname, #lname,#phone, #email, #agentPhone').focus(function(){
+			
+			$(this).css({"border-bottom":"none"});
+		});
 	
 });
 
