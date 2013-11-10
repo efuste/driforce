@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
 	
-    <title>DriForce Restorations</title>
+    <title>Miami Mold Remediation - DriForce Restorations</title>
 	 
 	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
     <!-- Bootstrap core CSS -->
@@ -43,13 +43,13 @@
 		
 	  	<header id="main-header">
 	  		<div id="logo">
-	  			<img src="images/logo.png" alt="Driforce Restoratin Inc"/>
+	  			<a href="/"><img src="images/logo.png" alt="Driforce Restoratin Inc"/></a>
 	  		</div>
 	  		
 	  		<div id="top-social">
-	  			<p id="phone-number">786.280.2278</p>
+	  			<a href="tel:+7862802278"><p id="phone-number">786.280.2278</p></a>
 	  			<ul id="social-media-icons">
-	  				<li><a class="tool-tips" data-toggle="tooltip" data-placement="bottom" title="Send Us An Email"><img src="images/email-icon.png" /></a></li>
+	  				<li><a href="mailto:mcabello@driforceinc.com?subject=Contact" class="tool-tips" data-toggle="tooltip" data-placement="bottom" title="Send Us An Email"><img src="images/email-icon.png" /></a></li>
 	  				<li><a class="tool-tips" data-toggle="tooltip" data-placement="bottom" title="Follow Us On Facebook"><img src="images/facebook-icon.png" /></a></li>
 	  				<li><a class="tool-tips" data-toggle="tooltip" data-placement="bottom" title="Follow Us On Twitter"><img src="images/twitter-icon.png" /></a></li>
 	  				<li><a class="tool-tips" data-toggle="tooltip" data-placement="bottom" title="Check Us Out On LinkedIn"><img src="images/linkedin-icon.png" /></a></li>

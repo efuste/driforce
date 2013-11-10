@@ -55,8 +55,9 @@
         		  <div class="toggle">
         				<p>24 Hours A Day</p>
         				<p>7 Days A Week</p>
-        				<p>Phone: 786-280-2278</p>
-        				<p>Email: driforce1@gmail.com </p>
+        				<a href="tel:+7862802278"><p>Phone: 786-280-2278</p></a>
+        				<p>Email:<a href="mailto:mcabello@driforceinc.com?subject=feedback"> mcabello@driforceinc.com</p></a>
+
         		</div>
         	</div>
         </div>            

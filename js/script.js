@@ -159,9 +159,9 @@ $('#submit-maincontact').click( function() {
 		
 		var description    = $('#description').val();
 		
-		var agentName = $('#agentName').val();
+		var policyNum = $('#policyNum').val();
 		var companyName = $('#companyName').val();
-		var agentPhone = $('#agentPhone').val(); 
+		
 		
 		$('.loading').fadeIn('fast');
 
@@ -174,7 +174,7 @@ $('#submit-maincontact').click( function() {
 						type: 'POST',
 						data: "fname=" + fname + "&lname=" + lname + "&phone=" + phone + "&email=" + email + "&address=" + address + 
 							  "&city=" + city + "&state=" + state + "&zip=" + zip + "&description=" + description + 
-							  "&agentName=" + agentName + "&companyName=" + companyName + "&agentPhone=" + agentPhone,
+							  "&policyNum=" + policyNum + "&companyName=" + companyName,
 						success: function(result) 
 						{
 							$('.loading').fadeOut('normal');
@@ -185,13 +185,9 @@ $('#submit-maincontact').click( function() {
 							else if (result == "email_error"){
 								$('#email').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
 							} 
-							else if (result == "agent_phone_error"){
-								$('#agentPhone').css({"background":"#FFFCFC","border-bottom":"2px solid #A11E22"});
-							} 
-							
 							
 							else {
-								$('#fname, #lname, #phone, #email, #agentPhone ').css({"background":"#FFFCFC","border-bottom":"none"});
+								$('#fname, #lname, #phone, #email').css({"background":"#FFFCFC","border-bottom":"none"});
 
 								$('<div class="success-contact"><img src="images/success.png" alt="" class="succes-icon" />Success! Thank you. </div>').insertAfter('#submit-maincontact');
 								$('.success-contact').fadeOut(10000, function(){ $(this).remove(); });

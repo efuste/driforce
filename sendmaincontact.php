@@ -16,9 +16,8 @@ $zip = $_POST['zip'];
 
 $description     = $_POST['description'];
 
-$agentName = $_POST['agentName']; 
+$policyNum = $_POST['policyNum']; 
 $companyName = $_POST['companyName']; 
-$agentPhone = $_POST['agentPhone']; 
 		
     
     if(!is_valid_phonenumber($phone)) {
@@ -26,9 +25,6 @@ $agentPhone = $_POST['agentPhone'];
 	}
 	else if (!eregi("^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$", $email)) {
     	echo 'email_error';
-	}
-	else if(!is_valid_phonenumber($agentPhone)){
-		echo 'agent_phone_error';
 	}
 	
  	else {
@@ -49,11 +45,9 @@ $agentPhone = $_POST['agentPhone'];
 		"\n" .
 		"Case Description: " . $description .
 		"\n" .
-		"Agent Name: " . $agentName . 
+		"Policy Number: " . $policyNum . 
 		"\n" .
-		"Insurance Company: " . $companyName .
-		"\n" . 
-		"Agent Phone: " . $agentPhone;
+		"Insurance Company: " . $companyName;
 
 		$email_message = trim(stripslashes($email_message));
 		mail($mailto, $subject, $email_message, "From: \"$vname\" <".$email.">\nReply-To: \"". ucwords($fname). "\" <".$email.">\nX-Mailer: PHP/" . phpversion() );
