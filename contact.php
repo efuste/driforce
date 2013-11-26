@@ -48,14 +48,13 @@
           				</fieldset>	
           				
           			    <fieldset id="case-description">
-          			    	<textarea class="text-area-full" rows="10" type="text" name"description" id="description"  >Case Description</textarea>
+          			    	<textarea class="text-area-full" rows="10" type="text" name"description" id="description">Case Description</textarea>
           			    </fieldset>
 
           				
           				<fieldset id="insurance-info">
-          					<input class="text-field-half" type="text" name="agentName" id="agentName" value="Insurance Agent Name"  />
-          					<input class="text-field-half" type="text" name="companyName" id="companyName" value="Insurance Agency Name"  />
-          					<input class="text-field-half" type="text" name="agentPhone" id="agentPhone" value="Insurance Agenct Phone"  />
+          					<input class="text-field-half" type="text" name="policyNum" id="policyNum" value="Policy Number"  />
+          					<input class="text-field-half" type="text" name="companyName" id="companyName" value="Insurance Company Name"  />
           				</fieldset>
 							<button type="submit" name="submit" class="button-blue" id="submit-maincontact">Submit &raquo;</button>
 							<span class="loading" style="display: none;">Please wait..</span> 
@@ -70,17 +69,21 @@
         			<div id="sidebar-services">
         				<h2>Our Services</h2>
         				<ul>
-        					<li>&raquo; Water Remediation</li>
-        					<li>&raquo; Mold Remediation</li>
-        					<li>&raquo; Fire Restoration</li>
-        					<li>&raquo; Bio-Hazard Remediation</li>
+        					<li><a href="water-remediation.php">&raquo; Water Remediation</a></li>
+        					<li><a href="mold-remediation.php">&raquo; Mold Remediation</a></li>
+        					<li><a href="fire-restoration.php">&raquo; Fire Restoration</a></li>
+        					<li><a href="bio-hazard-remediation.php">&raquo; Bio-Hazard Remediation</a></li>
         				</ul>
         				
         				<h2>Contact Info</h2>
         		
-        				<p><span class="bold-blue">25 HOURS A DAY<br />7 DAYS A WEEK</span></p>
+        				<p><span class="bold-blue">24 HOURS A DAY<br />7 DAYS A WEEK</span></p>
         				<p><span class="bold-blue">Phone:</span> 786.280.2278</p>
+<<<<<<< HEAD
         			<p><span class="bold-blue">Email:</span> 	<a href="mailto:mcabello@drifoce.com?subject=feedback">mcabello@driforce.com</p></a>
+=======
+        			<p><span class="bold-blue">Email:</span> 	<a href="mailto:mcabello@driforceinc.com?subject=feedback">mcabello@driforceinc.com</p></a>
+>>>>>>> 5e657e1850b1bf5f16a1114f3ef65095d615fb24
 
         				
         				

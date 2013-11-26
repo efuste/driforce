@@ -228,16 +228,13 @@
       <div class="row main-content">
        
         	<div class="col-lg-8">
-          		<h2>Water, Mold & Bio-hazard Remediation</h2>
+          		<h2>Water, Mold, Fire & Bio-hazard Remediation</h2>
           		<h4>To Preserve and Restore!</h4>
           		<p>Dri-Force Restoration is South Florida’s leader in providing property emergency services for fire, water, mold and bio-hazard restoration and remediation. We are dedicated to serving Miami-Dade, Broward, Palm Beach, Collier, Lee and Monroe Counties. Dri-Force Restoration’s ultimate mission is to restore and remediate at the highest quality, while establishing the health, safety and welfare of built environments.</p>
 				<p>Dri-Force Restoration’s administrative staff and technicians undergo the highest level of remediation and restoration training and continuing education, while conforming to the highest industry standards and guidlines, known as the <a href="http://www.iicrc.org/">Institute of Inspection Cleaning and Restoration Certification (IICRC). </a></p>
 				<p>All Dri-Force Restoration staff maintain high standards in ethics and expertise based on the IICRC guidelines.
 				<p>Dri-Force Restoration combines unrivaled experience, optimum knowledge, and elite training to provide customers compassionate care while always ensuring that the restoration and remediation process is as proficient and stress free as possible. Dri-Force Restoration promises to arrive at the scene within 30 minutes to 2 hours after initial call, assess the extent of property damage and work diligently to restore your property to pre-loss condition or better. Dri-Force Restoration’s highly trained professionals will guide you through the process and guarantee all questionsare answered.</p> 
 				<p>Please contact Dri-Force Restoration at (786) 280-2278 immediately if and when your property has been affected by fire, water, mold, vandalism, and/ or bio-hazard. Time is crucial in limiting damage caused by such unfortunate events.</p>
-          						<a class="button-blue" href="contact.php">Contact Us</a>
-
-          	
           	</div>
         <!-- /.col-lg-4 -->
        

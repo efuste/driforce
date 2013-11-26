@@ -131,6 +131,9 @@ line-height: 13px;
 	z-index: 15;
 	background: url('../images/bottom-bar.png') repeat-x;
 	height: 81px;	
+	-webkit-box-shadow: 0px 100px 500px 0px #B3B3B3;
+	box-shadow: 0px 100px 500px 0px #B3B3B3;
+	z-index: -1000000;
 }
 
 h1#bottom-bar-title{
@@ -220,10 +223,17 @@ h1#bottom-bar-title{
 #footer-container ul {
 	list-style: none;
 	padding: 0;
+	font-size: 14px;
+	font-weight: 300;
 }
-
+#footer-container p {
+	font-size: 14px;
+	font-weight: 300;
+}
 #footer-container a {
 	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
 }
 
 #location {
@@ -357,6 +367,7 @@ input:focus, textarea:focus {
 
 #footer-container h4 {
 	color: #fff;
+	margin-top: 25px;
 }
 
 
@@ -451,7 +462,7 @@ ul.checklist li {
 	font-style:normal;
 	height:40px;
 	line-height:36px;
-	width:100px;
+	width:120px;
 	text-decoration:none;
 	text-align:center;
 }
@@ -568,6 +579,8 @@ ul.checklist li {
 	}
 	.sidebar {
 		width: 100%;
+		min-height: 400px;
+				
 	}
 
 	
@@ -710,6 +723,7 @@ ul.checklist li {
 	}
 	.sidebar {
 		width: 100%;
+		min-height: 300px;
 	}
 	
 }
@@ -797,12 +811,11 @@ ul.checklist li {
 	
 	.sidebar {
 		width: 100%;
+		min-height: 153px;
 	}
 	
 	
 }
-
-
 
 
 

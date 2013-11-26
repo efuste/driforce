@@ -20,10 +20,10 @@
         			<div id="sidebar-services">
         				<h2>Our Services</h2>
         				<ul>
-        					<li>&raquo; Water Remediation</li>
-        					<li>&raquo; Mold Remediation</li>
-        					<li>&raquo; Fire Restoration</li>
-        					<li>&raquo; Bio-Hazard Remediation</li>
+        					<li><a href="water-remediation.php">&raquo; Water Remediation</a></li>
+        					<li><a href="mold-remediation.php">&raquo; Mold Remediation</a></li>
+        					<li><a href="fire-restoration.php">&raquo; Fire Restoration</a></li>
+        					<li><a href="bio-hazard-remediation.php">&raquo; Bio-Hazard Remediation</a></li>
         				</ul>
         				
         				<img src="images/iirc-logo.png"  />
