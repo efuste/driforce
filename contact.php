@@ -80,7 +80,7 @@
         		
         				<p><span class="bold-blue">25 HOURS A DAY<br />7 DAYS A WEEK</span></p>
         				<p><span class="bold-blue">Phone:</span> 786.280.2278</p>
-        				<p><span class="bold-blue">Emil:</span> driforce1@gmail.com</p>
+        			<p><span class="bold-blue">Email:</span> 	<a href="mailto:mcabello@drifoce.com?subject=feedback">mcabello@driforce.com</p></a>
 
         				
         				

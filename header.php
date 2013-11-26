@@ -47,7 +47,7 @@
 	  		</div>
 	  		
 	  		<div id="top-social">
-	  			<p id="phone-number">786.280.2278</p>
+	  			<a href="tel:+7862802278"><p id="phone-number">786.280.2278</p></a>
 	  			<ul id="social-media-icons">
 	  				<li><a class="tool-tips" data-toggle="tooltip" data-placement="bottom" title="Send Us An Email"><img src="images/email-icon.png" /></a></li>
 	  				<li><a class="tool-tips" data-toggle="tooltip" data-placement="bottom" title="Follow Us On Facebook"><img src="images/facebook-icon.png" /></a></li>
