@@ -5,16 +5,16 @@
     <!-- Carousel
     ================================================== -->
    <div id="page-header-container">
-   		<img src="images/contact-us-header.jpg" />
+   		<img class="animated fadeIn" src="images/contact-us-header.jpg" />
    	</div>
 	<div id="bottom-bar">
 		<div class="container">
 			<h1 id="bottom-bar-title">24 Hour Emergency Service</h1>
 			<div id="bottom-bar-icons">
-				<a href="water-remediation.php"><img src="images/water-icon.png" /></a>
-				<a href="mold-remediation.php"><img src="images/mold-icon.png" /></a>
-				<a href="fire-restoration.php"><img src="images/fire-icon.png" /></a>
-				<a href="bio-hazard-remediation.php"><img src="images/biohazard-icon.png" /></a>
+				<a href="water-remediation.php"><img class="animated fadeInUp" src="images/water-icon.png" /></a>
+				<a href="mold-remediation.php"><img class="animated fadeInUp" src="images/mold-icon.png" /></a>
+				<a href="fire-restoration.php"><img class="animated fadeInUp" src="images/fire-icon.png" /></a>
+				<a href="bio-hazard-remediation.php"><img class="animated fadeInUp" src="images/biohazard-icon.png" /></a>
 			</div>
 		</div>
 		<div class="clearfix"></div>	
@@ -35,16 +35,16 @@
           				<h1>Contact Dri-Force Restoration</h1>
           				<p>Please use the form below to get in touch with us.</p>
           				<form action="#" id="main-contact">
-          					<input class="text-field-half" type="text" name="fname" id="fname" value="First Name (required)"  />
-          					<input class="text-field-half" type="text" name="lname" id="lname" value="Last Name (required)"  />
-          					<input class="text-field-half" type="text" name="phone" id="phone" value="Phone (required)"  />
-          					<input class="text-field-half" type="text" name="email" id="email" value="Email (required)"  />
+          					<input class="text-field-half" type="text" name="fname" id="fname" placeholder="First Name (required)"  />
+          					<input class="text-field-half" type="text" name="lname" id="lname" placeholder="Last Name (required)"  />
+          					<input class="text-field-half" type="text" name="phone" id="phone" placeholder="Phone (required)"  />
+          					<input class="text-field-half" type="text" name="email" id="email" placeholder="Email (required)"  />
           					
           				<fieldset id="location">	
-          					<input class="text-field-full" type="text" name="address" id="address" value="Address"/>
-          					<input class="text-field-half" type="text" name="city" id="city" value="City"  />
-							<input class="text-field-quarter" type="text" name="state" id="state" value="FL" />
-							<input class="text-field-quarter" type="text" name="zip" id="zip" value="Zip"/>
+          					<input class="text-field-full" type="text" name="address" id="address" placeholder="Address"/>
+          					<input class="text-field-half" type="text" name="city" id="city" placeholder="City"  />
+							<input class="text-field-quarter" type="text" name="state" id="state" placeholder="FL" />
+							<input class="text-field-quarter" type="text" name="zip" id="zip" placeholder="Zip"/>
           				</fieldset>	
           				
           			    <fieldset id="case-description">
@@ -53,8 +53,8 @@
 
           				
           				<fieldset id="insurance-info">
-          					<input class="text-field-half" type="text" name="policyNum" id="policyNum" value="Policy Number"  />
-          					<input class="text-field-half" type="text" name="companyName" id="companyName" value="Insurance Company Name"  />
+          					<input class="text-field-half" type="text" name="policyNum" id="policyNum" placeholder="Policy Number"  />
+          					<input class="text-field-half" type="text" name="companyName" id="companyName" placeholder="Insurance Company Name"  />
           				</fieldset>
 							<button type="submit" name="submit" class="button-blue" id="submit-maincontact">Submit &raquo;</button>
 							<span class="loading" style="display: none;">Please wait..</span> 

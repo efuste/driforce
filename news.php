@@ -4,16 +4,16 @@
     <!-- Carousel
     ================================================== -->
    	<div id="page-header-container">
-   		<img src="images/blog-listing-header.jpg" />
+   		<img class="animated fadeIn" src="images/blog-listing-header.jpg" />
    	</div>
 	<div id="bottom-bar">
 		<div class="container">
 			<h1 id="bottom-bar-title">24 Hour Emergency Service</h1>
 			<div id="bottom-bar-icons">
-				<a href="water-remediation.php"><img src="images/water-icon.png" /></a>
-				<a href="mold-remediation.php"><img src="images/mold-icon.png" /></a>
-				<a href="fire-restoration.php"><img src="images/fire-icon.png" /></a>
-				<a href="bio-hazard-remediation.php"><img src="images/biohazard-icon.png" /></a>
+				<a href="water-remediation.php"><img class="animated fadeInUp" src="images/water-icon.png" /></a>
+				<a href="mold-remediation.php"><img class="animated fadeInUp" src="images/mold-icon.png" /></a>
+				<a href="fire-restoration.php"><img class="animated fadeInUp" src="images/fire-icon.png" /></a>
+				<a href="bio-hazard-remediation.php"><img class="animated fadeInUp" src="images/biohazard-icon.png" /></a>
 			</div>
 		</div>
 		<div class="clearfix"></div>	
